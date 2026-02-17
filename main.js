@@ -1,5 +1,9 @@
 export function MainHtml() {
-    let html = "<div>1</div>";
+    const html = "<h1 class=\"title\">Министерство образования Свердловской области</h1>" + 
+    "<p>Екатеринбургский колледж транспортного строительства</p>" +
+    "";
+    
+    console.log(1);
     return html;
 }
 export function aboutHtml() {
