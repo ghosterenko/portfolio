@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <script src="../porrfolio/scripts/script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(39, 37, 37);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <a id="main" href="#" class="nav-item">Главная</a>
+            <a id="about" href="#" class="nav-item">О себе</a>
+            <a id="achivement" href="#" class="nav-item">Достижения</a>
+            <a id="works" href="#" class="nav-item">Работы</a>
+            <a id="documets" href="#" class="nav-item">Документы</a>
+            <a id="citizen" href="#" class="nav-item">Я гражданин</a>
+        </nav>
+        <style>
+            .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+            .nav-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+            }
+            .nav-item {
+                transition: 1s;
+            }
+            .nav-item:hover {
+                font-size: 32px;
+                font-weight: bold;
+            }
+            
+        </style>
+    </header>
+    <main class="main">
+        <style>
+            .main {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <section class="section">
+            <style>
+                .section {
+                    background-color: rgb(64, 64, 64);
+                    width: 100em;
+                    height: 50em;
+                    border-radius: 25px;
+                }
+            </style>    
+        </section>
+    </main>
+    <footer class="footer">
+        <style>
+            .footer {
+                background-color: rgb(38, 38, 38);
+            }
+        </style>
+        
+    </footer>
+</body>
+</html>
