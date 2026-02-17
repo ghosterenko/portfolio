@@ -1,4 +1,3 @@
-import { MainHtml, } from "./main.js"
 
 
 
@@ -13,20 +12,27 @@ const citizenPage = document.getElementById("citizen");
 const sectionMain = document.querySelector(".section");
 
 mainPage.addEventListener('click', () => {
-    sectionMain.innerHTML = MainHtml();
+    sectionMain.innerHTML = "<h1 class=\"title\">Министерство образования Свердловской области</h1>" + 
+    "<p>Екатеринбургский колледж транспортного строительства</p>" +
+    "";
+    
+    const title = document.querySelector("title");
+    title.style.color = "white";
+
+
 });
 aboutPage.addEventListener('click', () => {
-     sectionMain.innerHTML = aboutHtml();
+     sectionMain.innerHTML = "1";
 });
 achivementPage.addEventListener('click', () => {
-     sectionMain.innerHTML = achivementHtml();
+     sectionMain.innerHTML = "2";
 });
 worksPage.addEventListener('click', () => {
-     sectionMain.innerHTML = WorksHtml();
+     sectionMain.innerHTML = "3";
 });
 documetsPage.addEventListener('click', () => {
-     sectionMain.innerHTML = DocumentHtml();
+     sectionMain.innerHTML = "4";
 });
 citizenPage.addEventListener('click', () => {
-     sectionMain.innerHTML = CitizenHtml();
+     sectionMain.innerHTML = "5";
 });
