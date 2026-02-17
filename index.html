@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <script src="../porrfolio/scripts/script.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
     <style>
+        @font-face {
+            font-family: cr;
+            src: url(../porrfolio/fonts/Cyrulik-Rounded.ttf);
+        }
+        @font-face {
+            font-family: cs;
+            src: url(../porrfolio/fonts/Cyrulik-Sharp.ttf);
+        }
+        @font-face {
+            font-family: csb;
+            src: url(../porrfolio/fonts/Cyrulik-SharpBold.ttf);
+        }
         * {
             margin: 0;
             padding: 0;
-            background-color: rgb(39, 37, 37);
+            font-family: cr;
         }
         a {
             text-decoration: none;
             color: white;
             font-size: 18px; 
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(39, 37, 37);
         }
     </style>
 </head>
@@ -52,34 +70,46 @@
         </style>
     </header>
     <main class="main">
+        <section class="section">
+     
+        </section>
         <style>
             .main {
-                height: 100vh;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 justify-content: center;
                 align-items: center;
             }
-        </style>
-        <section class="section">
-            <style>
-                .section {
-                    background-color: rgb(64, 64, 64);
-                    width: 100em;
-                    height: 50em;
-                    border-radius: 25px;
-                }
-            </style>    
-        </section>
+            .section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(64, 64, 64);
+                width: 100em;
+                height: 50em;
+                border-radius: 25px;
+                color: white;
+            }
+        </style>  
     </main>
     <footer class="footer">
+        <p>Ⓒcopyright</p>
+        <p>89999999999</p>
         <style>
             .footer {
-                background-color: rgb(38, 38, 38);
+                height: 20vh;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 24px;
+                gap: 20px;
             }
         </style>
-        
     </footer>
 </body>
 </html>
