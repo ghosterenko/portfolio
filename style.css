@@ -1,0 +1,309 @@
+/* ========== style.css ========== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 4px solid #0056b3;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 0.2rem;
+}
+
+header .header-meta {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding-bottom: 2rem;
+}
+
+section {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+    color: #333;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 1rem 0 0.4rem 0;
+    color: #555;
+}
+
+h5 {
+    font-size: 0.95rem;
+    margin: 0.8rem 0 0.3rem 0;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin: 0.4rem 0;
+}
+
+ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1.2rem 0;
+}
+
+/* ===== ТИТУЛЬНЫЙ ЛИСТ ===== */
+.title-block {
+    border: 2px solid #007bff;
+    background: #f8f9ff;
+}
+
+.title-block p {
+    margin: 0.2rem 0;
+}
+
+.title-block strong {
+    color: #333;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.competencies-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competencies-grid ul li {
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+
+.competencies-grid ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.competencies-grid ul li strong {
+    color: #333;
+}
+
+.comp-block {
+    background: #fff;
+    padding: 1rem 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.comp-block h5 {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+/* ===== О СЕБЕ ===== */
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    padding-left: 18px;
+    position: relative;
+}
+
+.about-content ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.about-content strong {
+    color: #333;
+}
+
+/* ===== ДОСТИЖЕНИЯ, РАБОТЫ, ДОКУМЕНТЫ, Я ГРАЖДАНИН ===== */
+.achievement-category,
+.work-category,
+.document-category,
+.citizen-category {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.achievement-category:last-child,
+.work-category:last-child,
+.document-category:last-child,
+.citizen-category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.achievement-category ul,
+.work-category ul,
+.document-category ul,
+.citizen-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-category ul li,
+.work-category ul li,
+.document-category ul li,
+.citizen-category ul li {
+    padding-left: 18px;
+    position: relative;
+}
+
+.achievement-category ul li::before,
+.work-category ul li::before,
+.document-category ul li::before,
+.citizen-category ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 4px solid #007bff;
+}
+
+footer p {
+    color: #eee;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #5faaff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header .subtitle {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 1.2rem 1.5rem;
+    }
+    .competencies-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    header {
+        padding: 1.2rem 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    section {
+        padding: 1rem 1.2rem;
+    }
+    .title-block {
+        padding: 1rem;
+    }
+    .comp-block {
+        padding: 0.8rem 1rem;
+    }
+}

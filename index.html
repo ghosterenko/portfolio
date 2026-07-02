@@ -3,113 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <script src="./scripts/script.js" defer></script>
-    <style>
-        @font-face {
-            font-family: cr;
-            src: url(../porrfolio/fonts/Cyrulik-Rounded.ttf);
-        }
-        @font-face {
-            font-family: cs;
-            src: url(../porrfolio/fonts/Cyrulik-Sharp.ttf);
-        }
-        @font-face {
-            font-family: csb;
-            src: url(../porrfolio/fonts/Cyrulik-SharpBold.ttf);
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: cr;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px; 
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background-color: rgb(39, 37, 37);
-        }
-    </style>
+    <title>Портфолио студента — Арсений Коньков</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-menu">
-            <a id="main" href="#" class="nav-item">Главная</a>
-            <a id="about" href="#" class="nav-item">О себе</a>
-            <a id="achivement" href="#" class="nav-item">Достижения</a>
-            <a id="works" href="#" class="nav-item">Работы</a>
-            <a id="documets" href="#" class="nav-item">Документы</a>
-            <a id="citizen" href="#" class="nav-item">Я гражданин</a>
-        </nav>
-        <style>
-            .header {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 40px;
-            }
-            .nav-menu {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 60px;
-            }
-            .nav-item {
-                transition: 1s;
-            }
-            .nav-item:hover {
-                font-size: 32px;
-                font-weight: bold;
-            }
-            
-        </style>
+
+    <header>
+        <div class="container">
+            <h1>Арсений Коньков</h1>
+            <p class="subtitle">Разработчик программного обеспечения</p>
+            <p class="header-meta">Екатеринбургский колледж транспортного строительства | 09.02.07 Информационные системы и программирование</p>
+        </div>
     </header>
-    <main class="main">
-        <section class="section">
-     
+
+    <main class="container">
+
+        <section class="title-block" id="title">
+            <h2>Титульный лист</h2>
+            <div class="title-content">
+                <p><strong>Министерство:</strong> Министерство образования и молодёжной политики Свердловской области</p>
+                <p><strong>Колледж:</strong> ГАПОУ СО «Екатеринбургский колледж транспортного строительства»</p>
+                <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+                <p><strong>Группа:</strong> ПР-32</p>
+                <p><strong>ФИО:</strong> Коньков Арсений Андреевич</p>
+                <p><strong>Квалификация:</strong> Разработчик программного обеспечения</p>
+                <hr>
+                <h4>Результаты обучения (ОК и ПК из ФГОС по специальности)</h4>
+                <div class="competencies-grid">
+                    <div class="comp-block">
+                        <h5>Общие компетенции (ОК)</h5>
+                        <ul>
+                            <li><strong>ОК 01.</strong> Выбирать способы решения задач профессиональной деятельности, применительно к различным контекстам.</li>
+                            <li><strong>ОК 02.</strong> Использовать современные средства поиска, анализа и интерпретации информации и информационные технологии для выполнения задач профессиональной деятельности.</li>
+                            <li><strong>ОК 03.</strong> Планировать и реализовывать собственное профессиональное и личностное развитие, предпринимательскую деятельность в профессиональной сфере, использовать знания по правовой и финансовой грамотности в различных жизненных ситуациях.</li>
+                            <li><strong>ОК 04.</strong> Эффективно взаимодействовать и работать в коллективе и команде.</li>
+                            <li><strong>ОК 05.</strong> Осуществлять устную и письменную коммуникацию на государственном языке Российской Федерации с учетом особенностей социального и культурного контекста.</li>
+                            <li><strong>ОК 06.</strong> Проявлять гражданско-патриотическую позицию, демонстрировать осознанное поведение на основе традиционных российских ценностей, в том числе с учетом гармонизации межнациональных и межрелигиозных отношений, применять стандарты антикоррупционного поведения.</li>
+                            <li><strong>ОК 07.</strong> Содействовать сохранению окружающей среды, ресурсосбережению, применять знания об изменении климата, принципы бережливого производства, эффективно действовать в чрезвычайных ситуациях.</li>
+                            <li><strong>ОК 08.</strong> Использовать средства физической культуры для сохранения и укрепления здоровья в процессе профессиональной деятельности и поддержания необходимого уровня физической подготовленности.</li>
+                            <li><strong>ОК 09.</strong> Пользоваться профессиональной документацией на государственном и иностранном языках.</li>
+                        </ul>
+                    </div>
+                    <div class="comp-block">
+                        <h5>Профессиональные компетенции (ПК)</h5>
+                        <ul>
+                            <li><strong>ПК 1.</strong> Разрабатывать программное обеспечение на основе методов и технологий программирования.</li>
+                            <li><strong>ПК 2.</strong> Разрабатывать и сопровождать программные продукты, используя соответствующие языки программирования, среды и инструменты.</li>
+                            <li><strong>ПК 3.</strong> Проводить отладку программного обеспечения, выявлять и устранять ошибки.</li>
+                            <li><strong>ПК 4.</strong> Участвовать в проектировании и разработке баз данных, обеспечивать их целостность и сохранность.</li>
+                            <li><strong>ПК 5.</strong> Тестировать программное обеспечение, проводить анализ результатов тестирования.</li>
+                            <li><strong>ПК 6.</strong> Разрабатывать и поддерживать пользовательские интерфейсы.</li>
+                            <li><strong>ПК 7.</strong> Участвовать в процессе разработки и сопровождения корпоративных информационных систем.</li>
+                            <li><strong>ПК 8.</strong> Внедрять и сопровождать прикладное программное обеспечение.</li>
+                            <li><strong>ПК 9.</strong> Обеспечивать безопасность программных продуктов и данных.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        <style>
-            .main {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                justify-content: center;
-                align-items: center;
-            }
-            .section {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: rgb(64, 64, 64);
-                width: 100em;
-                height: 50em;
-                border-radius: 25px;
-                color: white;
-            }
-        </style>  
+
+        <section id="about">
+            <h2>О себе</h2>
+            <div class="about-content">
+                <p><strong>Краткая биографическая справка:</strong></p>
+                <p>Я, Коньков Арсений Андреевич, родился в городе Екатеринбурге. С раннего возраста проявлял интерес к информационным технологиям и программированию. В 2023 году поступил в Екатеринбургский колледж транспортного строительства на специальность «Информационные системы и программирование». За время обучения изучал языки программирования C#, Kotlin, технологии разработки десктопных и мобильных приложений, а также основы проектирования баз данных.</p>
+                <p><strong>Освоенные знания, умения, полученный опыт:</strong></p>
+                <ul>
+                    <li>Разработка приложений на C# с использованием WinForms и WPF.</li>
+                    <li>Создание мобильных приложений для Android на Kotlin в среде Android Studio.</li>
+                    <li>Проектирование и администрирование баз данных MS SQL Server.</li>
+                    <li>Написание модульных тестов с использованием xUnit.</li>
+                    <li>Опыт работы с системами контроля версий Git.</li>
+                    <li>Основы веб-разработки: HTML, CSS, JS.</li>
+                </ul>
+                <p><strong>Личностные качества, которые помогут в работе по профессии:</strong></p>
+                <ul>
+                    <li>Ответственность при выполнении поставленных задач.</li>
+                    <li>Умение работать в команде и эффективно взаимодействовать с коллегами.</li>
+                    <li>Аналитическое мышление и способность находить нестандартные решения.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Достижения</h2>
+            <div class="achievement-category">
+                
+            </div>
+            <div class="achievement-category">
+               
+            </div>
+        </section>
+
+        <section id="works">
+            <h2>Работы</h2>
+            <div class="work-category">
+                <h4>Курсовые работы (проекты)</h4>
+                <ul>
+                    <li>
+                        <strong>Производственная практика:</strong> «Калькулятор расчета цены для модульных домов и бань» (C#, SQLite, ASP.NET)
+                        <br><a href="https://github.com/ghosterenko/PP_02_03" target="_blank">Посмотреть на GitHub →</a>
+                    </li>
+                    <li>
+                        <strong>Учебная практика:</strong> «Мобильное приложение - база данных колледжа» (Kotlin, Android Studio, Room)
+                        <br><a href="https://github.com/ghosterenko/collageBd" target="_blank">Посмотреть на GitHub →</a>
+                    </li>
+                </ul>
+            </div>
+                    </section>
+
+        <section id="documents">
+            <h2>Документы</h2>
+            <div class="document-category">
+                
+            </div>
+            <div class="document-category">
+                
+            </div>
+            <div class="document-category">
+                
+            </div>
+        </section>
+
+        <section id="citizen">
+            <h2>Я гражданин</h2>
+            <div class="citizen-category">
+                <h4>Грамоты</h4>
+                <ul>
+                    
+                </ul>
+            </div>
+            
+        </section>
+
     </main>
-    <footer class="footer">
-        <p>Ⓒcopyright</p>
-        <p>89999999999</p>
-        <style>
-            .footer {
-                height: 20vh;
-                background-color: black;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                font-size: 24px;
-                gap: 20px;
-            }
-        </style>
+
+    <footer>
+        <div class="container">
+            <p>Связаться со мной: <a href="mailto:arsenijkonkov912@email.com">arsenijkonkov912@email.com</a> | <a href="tel:+79193824193">+7 (919) 382-41-93</a></p>
+            <p>&copy; 2026 Арсений Коньков. Все права защищены.</p>
+        </div>
     </footer>
+
 </body>
 </html>
